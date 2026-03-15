@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muscle-ups — CALIKREAM</title>
+  <meta name="description" content="Master muscle-ups — the ultimate compound movement. Pull yourself above the bar with explosive strength and precise technique.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar--scrolled" id="navbar">
+    <div class="navbar__inner">
+      <a href="../index.html" class="navbar__logo" style="color: var(--color-charcoal)">CALI<span>KREAM</span></a>
+      <div class="navbar__links">
+        <a href="../index.html#programs" class="navbar__link" style="color: var(--color-mid)">Programs</a>
+        <a href="../index.html#roadmap" class="navbar__link" style="color: var(--color-mid)">Roadmap</a>
+        <a href="../index.html#skills" class="navbar__link" style="color: var(--color-mid)">Skills</a>
+        <a href="../index.html#community" class="navbar__link" style="color: var(--color-mid)">Community</a>
+      </div>
+      <div class="navbar__actions">
+        <a href="#" class="navbar__login" style="color: var(--color-mid)">Log In</a>
+        <a href="#" class="btn btn--primary btn--sm">Get Started <span class="btn-arrow">→</span></a>
+      </div>
+      <button class="navbar__toggle" id="nav-toggle" aria-label="Menu">
+        <span style="background:var(--color-charcoal)"></span><span style="background:var(--color-charcoal)"></span><span style="background:var(--color-charcoal)"></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../index.html#programs" class="mobile-menu__link">Programs</a>
+    <a href="../index.html#roadmap" class="mobile-menu__link">Roadmap</a>
+    <a href="../index.html#skills" class="mobile-menu__link">Skills</a>
+    <a href="../index.html#community" class="mobile-menu__link">Community</a>
+  </div>
+
+  <!-- SKILL HERO -->
+  <section class="section section--dark" style="padding-top: calc(var(--nav-height) + var(--space-3xl)); min-height: 70vh; display: flex; align-items: center;">
+    <div class="container" style="display: flex; align-items: center; gap: var(--space-2xl); flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 300px;">
+        <div style="font-size: 13px; color: rgba(255,255,255,0.4); margin-bottom: var(--space-md);">
+          <a href="../index.html" style="color: rgba(255,255,255,0.4); text-decoration: underline;">Home</a> &gt;
+          <a href="../index.html#skills" style="color: rgba(255,255,255,0.4); text-decoration: underline;">Skills</a> &gt;
+          <span style="color: var(--color-accent);">Muscle-ups</span>
+        </div>
+        <span class="section-label">Skill Guide</span>
+        <h1 style="color: #fff; margin-bottom: var(--space-md);">Muscle-ups.</h1>
+        <p class="body-large" style="color: rgba(255,255,255,0.6); max-width: 500px;">The ultimate compound movement. Pulling yourself above the bar combines explosive strength with precise technique in one fluid motion.</p>
+      </div>
+      <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
+        <svg class="stick-figure" viewBox="0 0 200 200" style="width: 240px; height: 260px; animation: muscleUpCycle 4s ease-in-out infinite;">
+          <line x1="55" y1="30" x2="145" y2="30" style="stroke-width:5"/>
+          <circle class="head" cx="100" cy="60" r="10"/>
+          <line x1="100" y1="70" x2="100" y2="120" style="stroke-width:4"/>
+          <line x1="100" y1="120" x2="80" y2="165" style="stroke-width:4"/>
+          <line x1="100" y1="120" x2="120" y2="165" style="stroke-width:4"/>
+          <line x1="100" y1="80" x2="75" y2="35" style="stroke-width:4"/>
+          <line x1="100" y1="80" x2="125" y2="35" style="stroke-width:4"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2">
+        <div class="reveal">
+          <span class="section-label">About This Skill</span>
+          <h2>What is a Muscle-up?</h2>
+          <p class="body-text" style="margin-top: var(--space-md);">The muscle-up is a dynamic movement that combines an explosive pull-up with a dip transition to finish above the bar. It's a benchmark skill in calisthenics — the moment you conquer the bar instead of just hanging from it.</p>
+          <p class="body-text" style="margin-top: var(--space-sm);">This movement is a full-body exercise demanding coordination between <strong>pulling muscles</strong> (lats, biceps, forearms) and <strong>pushing muscles</strong> (chest, triceps, shoulders), making it the ultimate upper-body compound movement.</p>
+        </div>
+        <div class="reveal reveal-delay-1" style="display: flex; justify-content: center;">
+          <div style="background: var(--color-bg-soft); border-radius: var(--radius-lg); padding: var(--space-xl); width: 100%; max-width: 400px;">
+            <h4 style="margin-bottom: var(--space-md);">Muscles Targeted</h4>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--color-border);">
+                <span style="font-weight: 600;">Lats & Back</span>
+                <div style="width: 120px; height: 6px; background: var(--color-border); border-radius: 3px; overflow: hidden;"><div style="width: 90%; height: 100%; background: var(--color-accent); border-radius: 3px;"></div></div>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--color-border);">
+                <span style="font-weight: 600;">Chest & Triceps</span>
+                <div style="width: 120px; height: 6px; background: var(--color-border); border-radius: 3px; overflow: hidden;"><div style="width: 85%; height: 100%; background: var(--color-accent); border-radius: 3px;"></div></div>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--color-border);">
+                <span style="font-weight: 600;">Forearms & Grip</span>
+                <div style="width: 120px; height: 6px; background: var(--color-border); border-radius: 3px; overflow: hidden;"><div style="width: 80%; height: 100%; background: var(--color-accent); border-radius: 3px;"></div></div>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0;">
+                <span style="font-weight: 600;">Core</span>
+                <div style="width: 120px; height: 6px; background: var(--color-border); border-radius: 3px; overflow: hidden;"><div style="width: 70%; height: 100%; background: var(--color-accent); border-radius: 3px;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRESSION LADDER -->
+  <section class="section section--soft">
+    <div class="container">
+      <div class="text-center reveal" style="max-width: var(--max-width-text); margin: 0 auto var(--space-xl);">
+        <span class="section-label">Progression</span>
+        <h2>Your Muscle-up Ladder.</h2>
+        <p class="body-large">From false grip to ring muscle-ups — build explosive pulling power.</p>
+      </div>
+      <div style="max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 0; position: relative;">
+        <div style="position: absolute; left: 28px; top: 28px; bottom: 28px; width: 3px; background: var(--color-border); z-index: 0;"></div>
+        <div class="reveal reveal-delay-1" style="display: flex; gap: var(--space-md); padding: var(--space-md) 0; position: relative; z-index: 1;">
+          <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--color-accent); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; flex-shrink: 0;">1</div>
+          <div class="card" style="flex: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 8px;"><h4 class="card__title">False Grip Training</h4><span class="badge badge--beginner">Beginner</span></div>
+            <p class="card__desc">Master the false grip on bar and rings. This wrist position is essential for the transition phase of the muscle-up.</p>
+            <p style="font-size: 13px; color: var(--color-light);"><strong>Est. time:</strong> 1–3 months</p>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2" style="display: flex; gap: var(--space-md); padding: var(--space-md) 0; position: relative; z-index: 1;">
+          <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--color-accent); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; flex-shrink: 0;">2</div>
+          <div class="card" style="flex: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 8px;"><h4 class="card__title">Kipping Muscle-up</h4><span class="badge badge--intermediate">Intermediate</span></div>
+            <p class="card__desc">Use hip drive and swing momentum to clear the bar. Learn the transition movement pattern.</p>
+            <p style="font-size: 13px; color: var(--color-light);"><strong>Est. time:</strong> 2–6 months</p>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-3" style="display: flex; gap: var(--space-md); padding: var(--space-md) 0; position: relative; z-index: 1;">
+          <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--color-accent); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; flex-shrink: 0;">3</div>
+          <div class="card" style="flex: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 8px;"><h4 class="card__title">Strict Muscle-up</h4><span class="badge badge--advanced">Advanced</span></div>
+            <p class="card__desc">No kip, pure pulling strength. The gold standard of muscle-ups — controlled explosive power from dead hang.</p>
+            <p style="font-size: 13px; color: var(--color-light);"><strong>Est. time:</strong> 6–12 months</p>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-4" style="display: flex; gap: var(--space-md); padding: var(--space-md) 0; position: relative; z-index: 1;">
+          <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--color-accent); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; flex-shrink: 0;">4</div>
+          <div class="card" style="flex: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 8px;"><h4 class="card__title">Ring Muscle-up</h4><span class="badge badge--elite">Elite</span></div>
+            <p class="card__desc">Muscle-up on gymnastics rings. Unstable surface demands peak strength, stability, and coordination.</p>
+            <p style="font-size: 13px; color: var(--color-light);"><strong>Est. time:</strong> 12+ months</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSE MODULES -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center reveal" style="max-width: var(--max-width-text); margin: 0 auto var(--space-xl);">
+        <span class="section-label">Course Modules</span>
+        <h2>Structured Training.</h2>
+        <p class="body-large">Explosive pulling programs — coming soon.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal reveal-delay-1" style="filter: blur(2px); opacity: 0.5; pointer-events: none;"><div class="card__icon">📹</div><h4 class="card__title">Module 1: Foundation</h4><p class="card__desc">High pull-ups, false grip training, and transition drills.</p></div>
+        <div class="card reveal reveal-delay-2" style="filter: blur(2px); opacity: 0.5; pointer-events: none;"><div class="card__icon">📹</div><h4 class="card__title">Module 2: Strength</h4><p class="card__desc">Weighted pull-ups, explosive pulls, and negative muscle-ups.</p></div>
+        <div class="card reveal reveal-delay-3" style="filter: blur(2px); opacity: 0.5; pointer-events: none;"><div class="card__icon">📹</div><h4 class="card__title">Module 3: Mastery</h4><p class="card__desc">Strict muscle-up technique, ring transitions, and rep programming.</p></div>
+      </div>
+      <div class="text-center" style="margin-top: var(--space-xl);"><p class="badge badge--coming" style="font-size: 14px; padding: 8px 20px;">🔒 Courses Coming Soon</p></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="cta-section__glow"></div>
+    <div class="container">
+      <h1 class="reveal">Rise Above<br>the Bar.</h1>
+      <p class="body-large reveal reveal-delay-1">Master the muscle-up — the defining calisthenics movement.</p>
+      <div class="cta-section__buttons reveal reveal-delay-2">
+        <a href="../index.html#programs" class="btn btn--primary">Explore Plans <span class="btn-arrow">→</span></a>
+        <a href="../index.html#skills" class="btn btn--ghost-white">Back to Skills</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand"><div class="footer__logo">CALI<span>KREAM</span></div><p class="footer__tagline">Master Calisthenics. Train smarter.</p></div>
+        <div class="footer__col"><div class="footer__col-title">Platform</div><a href="../index.html#programs">Programs</a><a href="../index.html#roadmap">Roadmap</a><a href="../index.html#skills">Skills</a></div>
+        <div class="footer__col"><div class="footer__col-title">Community</div><a href="#">Forum</a><a href="#">Events</a><a href="#">Athletes</a></div>
+        <div class="footer__col"><div class="footer__col-title">Resources</div><a href="#">Blog</a><a href="#">Library</a><a href="#">Docs</a></div>
+        <div class="footer__col"><div class="footer__col-title">Company</div><a href="#">About</a><a href="#">Contact</a><a href="#">Support</a></div>
+      </div>
+      <div class="footer__bottom"><span>© 2026 CALIKREAM</span><div class="footer__socials"><a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a><a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.13C5.12 19.56 12 19.56 12 19.56s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48"/></svg></a></div></div>
+    </div>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+  <script src="../js/scroll.js"></script>
+  <script src="../js/counters.js"></script>
+</body>
+</html>
