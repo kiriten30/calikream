@@ -7,7 +7,7 @@
   <meta name="description" content="Master the planche — the pinnacle of pushing strength. Follow our structured progression from tuck planche to full planche.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="/src/styles/main.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 </head>
@@ -23,9 +23,9 @@
         <a href="../index.html#skills" class="navbar__link" style="color: var(--color-mid)">Skills</a>
         <a href="../index.html#community" class="navbar__link" style="color: var(--color-mid)">Community</a>
       </div>
-      <div class="navbar__actions">
-        <a href="#" class="navbar__login" style="color: var(--color-mid)">Log In</a>
-        <a href="#" class="btn btn--primary btn--sm">Get Started <span class="btn-arrow">→</span></a>
+      <div class="navbar__actions" id="nav-auth-container">
+        <a href="../login.html" class="navbar__login" style="color: var(--color-mid)">Log In</a>
+        <a href="../signup.html" class="btn btn--primary btn--sm">Get Started <span class="btn-arrow">&rarr;</span></a>
       </div>
       <button class="navbar__toggle" id="nav-toggle" aria-label="Menu">
         <span style="background:var(--color-charcoal)"></span>
@@ -41,6 +41,8 @@
     <a href="../index.html#roadmap" class="mobile-menu__link">Roadmap</a>
     <a href="../index.html#skills" class="mobile-menu__link">Skills</a>
     <a href="../index.html#community" class="mobile-menu__link">Community</a>
+    <a href="../login.html" class="mobile-menu__link">Log In</a>
+    <a href="../signup.html" class="mobile-menu__link">Get Started</a>
   </div>
 
   <!-- ====== SKILL HERO ====== -->
@@ -261,7 +263,7 @@
         <div class="footer__col">
           <div class="footer__col-title">Company</div>
           <a href="#">About</a>
-          <a href="#">Contact</a>
+          <a href="mailto:krizedits67@gmail.com">Contact</a>
           <a href="#">Support</a>
         </div>
       </div>
@@ -282,8 +284,8 @@
     </div>
   </footer>
 
-  <script src="../js/nav.js"></script>
-  <script src="../js/scroll.js"></script>
-  <script src="../js/counters.js"></script>
+  <script type="module" src="/src/js/pages/skill.js"></script>
 </body>
 </html>
+
+

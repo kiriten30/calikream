@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/src/styles/main.css">
 
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
@@ -569,41 +569,7 @@
 
 
   <!-- ====== SCRIPTS ====== -->
-  <script type="module" src="/src/js/hero.js"></script>
-  <script type="module" src="/src/js/nav.js"></script>
-  <script type="module" src="/src/js/scroll.js"></script>
-  <script type="module" src="/src/js/counters.js"></script>
-  <script type="module" src="/src/js/app.js"></script>
-
-  <!-- ====== AUTHENTICATION STATE ====== -->
-  <script type="module">
-    import { getActiveSession, logOutUser } from '/src/js/auth.js';
-
-    // Check for an active user session on page load
-    async function initAuth() {
-      const session = await getActiveSession();
-      const authContainer = document.getElementById('nav-auth-container');
-      
-      if (session && session.user) {
-        // User is logged in! Update the navbar UI
-        const userName = session.user.user_metadata?.full_name || session.user.email.split('@')[0];
-        
-        authContainer.innerHTML = `
-          <div style="display: flex; align-items: center; gap: 16px;">
-            <span style="font-weight: 500; font-size: 14px; opacity: 0.8;">Hey, ${userName}</span>
-            <button id="btnLogout" class="btn btn--ghost-white btn--sm" style="padding: 10px 16px;">Log Out</button>
-          </div>
-        `;
-
-        // Attach logout event listeners
-        document.getElementById('btnLogout').addEventListener('click', () => {
-          logOutUser();
-        });
-      }
-    }
-
-    // Run the auth check
-    initAuth();
-  </script>
+  <script type="module" src="/src/js/pages/home.js"></script>
 </body>
 </html>
+
